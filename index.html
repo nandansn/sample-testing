@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Testing</title>
+
+
+    <style>
+
+        * {
+            margin:0
+        }
+        body {
+            background-color: #FBF2CF;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        tbody tr td  {
+            border: 2px solid black;
+        }
+
+        div.root-container {
+            margin-top: 30px;
+        }
+
+        div.input-container {
+            width: 500px;
+            height: 200px;
+            margin: 0 auto 0 auto;
+        }
+        
+
+        div.table-container {
+            display: block;
+            width: 500px;
+            height: 200px;
+            margin: 0 auto 0 auto;
+        }
+
+        button, p {
+            margin-top: 10px;
+        }
+
+        p {
+            color: #FA7070;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="root-container"">
+         <div class="input-container">
+        <select name="" id="category">
+            <option value="Mobile">Mobile</option>
+            <option value="Books">Books</option>
+            <option value="Computer">Computer</option>
+        </select>
+        <br>
+        <button class="btn btn-primary" type="button" id="btn">Submit</button>
+        <p>
+            <span id="result"></span>
+        </p>
+        
+    </div>
+
+    <div class="table-container">
+
+        <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AAPL</td>
+                <td>Apple Inc. Common Stock</td>
+                <td>$150.70</td>
+            </tr>
+            <tr>
+                <td>MSFT</td>
+                <td>Microsoft Corporation Common Stock</td>
+                <td>$244.74</td>
+            </tr>
+            <tr>
+                <td>GOOG</td>
+                <td>Alphabet Inc. Class C Capital Stock</td>
+                <td>$103.63</td>
+            </tr>
+            <tr>
+                <td>AMZN</td>
+                <td>Amazon.com, Inc. Common Stock</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TSLA</td>
+                <td>Tesla, Inc. Common Stock</td>
+                <td>$303.35</td>
+            </tr>
+        </tbody>
+    </table>
+        
+    </div>
+
+    </div>
+
+   
+
+    
+    
+</body>
+
+<script src="./index.js"></script>
+</html>
