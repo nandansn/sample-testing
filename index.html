@@ -26,8 +26,8 @@
         }
 
         div.input-container {
-            width: 500px;
-            height: 200px;
+            width: 300px;
+            height: 100px;
             margin: 0 auto 0 auto;
         }
         
@@ -36,7 +36,7 @@
             display: block;
             width: 500px;
             height: 200px;
-            margin: 0 auto 0 auto;
+            margin: 50px auto 0 auto;
         }
 
         button, p {
@@ -46,6 +46,18 @@
         p {
             color: #FA7070;
         }
+
+        div.item-cart-container input {
+            width: 60px;
+            padding: 5px;
+            font-size: 30px;
+        }
+
+        div.item-cart-container p {
+            color: black;
+            padding: 10px;
+            font-size: 30px;
+        }
         
     </style>
 </head>
@@ -54,16 +66,30 @@
     <div class="root-container"">
          <div class="input-container">
         <select name="" id="category">
+            <option value="none">Choose Product</option>
             <option value="Mobile">Mobile</option>
             <option value="Books">Books</option>
             <option value="Computer">Computer</option>
         </select>
-        <br>
-        <button class="btn btn-primary" type="button" id="btn">Submit</button>
+        
+        
         <p>
             <span id="result"></span>
         </p>
         
+    </div>
+
+    <div class="item-cart-container">
+        <h4>Add to cart</h4>
+        <p id="item-count">0</p>
+        <input type="button" value="+" id="plus">
+        <input type="button" value="-" id="minus">
+        <br>
+        <button class="btn btn-primary" type="button" id="btn">Submit</button>
+        <br>
+         <p>
+            <span id="cart-message"></span>
+        </p>
     </div>
 
     <div class="table-container">
