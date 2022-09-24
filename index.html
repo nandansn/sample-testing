@@ -1,66 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sample Testing</title>
-    <link rel="stylesheet" href="./index.css">
-
-   
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <img src="./img/ecommerce(1).png" alt="" />
+      <h2>Testing - e-Commerce</h2>
+    </div>
 
     <div class="root-container">
-         <div class="input-container">
+      <div class="input-container">
         <select name="" id="category">
-            <option value="none">Choose Product</option>
-            <option value="Mobile">Mobile</option>
-            <option value="Books">Books</option>
-            <option value="Computer">Computer</option>
+          <option value="none">Choose Product</option>
+          <option value="Mobile">Mobile</option>
+          <option value="Books">Books</option>
+          <option value="Computer">Computer</option>
         </select>
         <p>
-            <span id="result"></span>
-        </p>        
-    </div>
+          <span id="result"></span>
+        </p>
+      </div>
 
-    <div class="product-container" id="product">
-        <img src="" alt="product-image">
-        <p>
-            Title: <span id="title"></span>
-        </p>
-        <p>
-            Price: <span id="price"></span>
-        </p>
-        <p>
-            In Stock: <span id="quantity"></span>
-        </p>
+      <div class="product-container" id="product">
+        <img src="" alt="product-image" />
+        <p>Title: <span id="title"></span></p>
+        <p>Price: <span id="price"></span></p>
+        <p>In Stock: <span id="quantity"></span></p>
         <div class="item-cart-container" id="quantity-counter">
-        <h4>Add or Remove</h4>
-        <p id="item-count">0</p>
-        <input type="button" value="+" id="plus">
-        <input type="button" value="-" id="minus">
-        <br>
-        <button class="btn btn-primary" type="button" id="btn">Submit</button>
-        <br>
-         
-    </div>
+          <h4>Quantity</h4>
+          <p id="item-count">0</p>
+          <input type="button" value="+" id="plus" />
+          <input type="button" value="-" id="minus" />
+          <br />
+          <button class="btn btn-primary" type="button" id="btn">Submit</button>
+          <br />
+        </div>
+      </div>
 
-    </div>
-
-    <div class="cart-container" id="cart-container">
+      <div class="cart-container" id="cart-container">
         <p>
-            <span id="cart-message"></span>
+          <span id="cart-message"></span>
         </p>
+      </div>
     </div>
+  </body>
 
-    </div>
-
-   
-
-    
-    
-</body>
-
-<script type="module" src="./index.js"></script>
+  <script type="module" src="./index.js"></script>
 </html>

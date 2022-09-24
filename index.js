@@ -25,7 +25,7 @@ selectCategory.addEventListener("change", (e) => {
 
   
     if (selectedValue !== "none") {
-      result.textContent = `User selected the category : ${selectedValue}`;
+      result.textContent = `Selected ${selectedValue}`;
       createProductContainer(selectedValue);
     }
 
