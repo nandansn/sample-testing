@@ -5,65 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Testing</title>
+    <link rel="stylesheet" href="./index.css">
 
-
-    <style>
-
-        * {
-            margin:0
-        }
-        body {
-            background-color: #FBF2CF;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        tbody tr td  {
-            border: 2px solid black;
-        }
-
-        div.root-container {
-            margin-top: 30px;
-        }
-
-        div.input-container {
-            width: 300px;
-            height: 100px;
-            margin: 0 auto 0 auto;
-        }
-        
-
-        div.table-container {
-            display: block;
-            width: 500px;
-            height: 200px;
-            margin: 50px auto 0 auto;
-        }
-
-        button, p {
-            margin-top: 10px;
-        }
-
-        p {
-            color: #FA7070;
-        }
-
-        div.item-cart-container input {
-            width: 60px;
-            padding: 5px;
-            font-size: 30px;
-        }
-
-        div.item-cart-container p {
-            color: black;
-            padding: 10px;
-            font-size: 30px;
-        }
-        
-    </style>
+   
 </head>
 <body>
 
-    <div class="root-container"">
+    <div class="root-container">
          <div class="input-container">
         <select name="" id="category">
             <option value="none">Choose Product</option>
@@ -71,66 +19,39 @@
             <option value="Books">Books</option>
             <option value="Computer">Computer</option>
         </select>
-        
-        
         <p>
             <span id="result"></span>
-        </p>
-        
+        </p>        
     </div>
 
-    <div class="item-cart-container">
-        <h4>Add to cart</h4>
+    <div class="product-container" id="product">
+        <img src="" alt="product-image">
+        <p>
+            Title: <span id="title"></span>
+        </p>
+        <p>
+            Price: <span id="price"></span>
+        </p>
+        <p>
+            In Stock: <span id="quantity"></span>
+        </p>
+        <div class="item-cart-container" id="quantity-counter">
+        <h4>Add or Remove</h4>
         <p id="item-count">0</p>
         <input type="button" value="+" id="plus">
         <input type="button" value="-" id="minus">
         <br>
         <button class="btn btn-primary" type="button" id="btn">Submit</button>
         <br>
-         <p>
-            <span id="cart-message"></span>
-        </p>
+         
     </div>
 
-    <div class="table-container">
+    </div>
 
-        <table>
-        <thead>
-            <tr>
-                <th>Symbol</th>
-                <th>Name</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>AAPL</td>
-                <td>Apple Inc. Common Stock</td>
-                <td>$150.70</td>
-            </tr>
-            <tr>
-                <td>MSFT</td>
-                <td>Microsoft Corporation Common Stock</td>
-                <td>$244.74</td>
-            </tr>
-            <tr>
-                <td>GOOG</td>
-                <td>Alphabet Inc. Class C Capital Stock</td>
-                <td>$103.63</td>
-            </tr>
-            <tr>
-                <td>AMZN</td>
-                <td>Amazon.com, Inc. Common Stock</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>TSLA</td>
-                <td>Tesla, Inc. Common Stock</td>
-                <td>$303.35</td>
-            </tr>
-        </tbody>
-    </table>
-        
+    <div class="cart-container" id="cart-container">
+        <p>
+            <span id="cart-message"></span>
+        </p>
     </div>
 
     </div>
@@ -141,5 +62,5 @@
     
 </body>
 
-<script src="./index.js"></script>
+<script type="module" src="./index.js"></script>
 </html>
