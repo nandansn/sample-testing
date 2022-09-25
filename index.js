@@ -39,18 +39,20 @@ function createProductContainer(name) {
     
     let item = {...products.find(product => product.type === name)};
 
-    let prodContainer = document.getElementById("product");
-
-    prodContainer.style.visibility = "visible"
+    let prodContainer = document.getElementById("product");   
+    
     prodContainer.querySelector("img").src = item.img_src
     prodContainer.querySelector("#title").textContent = item.title
     prodContainer.querySelector("#price").textContent = item.price
     prodContainer.querySelector("#quantity").textContent = item.available_quantity;
+    prodContainer.style.visibility = "visible";
 
     
 
         
 }
+
+console.log('after function');
 
 
 let counter = document.getElementById("quantity-counter");
